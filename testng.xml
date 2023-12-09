@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="5" parallel="tests">
+<listeners>
+	<listener class-name="listeners.Listeners"/>
+</listeners>
+	
+	
+	<parameter name="Browser name" value="chrome" />
+
+	<parameter name="URL" value="https://searchive:ed2022@dev.searchive.etondigital.com" />
+	<parameter name="Admin email" value="admin@searchive.co.uk" />
+	<parameter name="Admin password" value="SearcHive!" />
+	
+	<parameter name="Client first name" value="Milan" />
+	<parameter name="Client last name" value="Client1" />
+	<parameter name="Client email" value="milan.kitanovic+client1@etondigital.com" />
+	<parameter name="Client last name reg" value="Client51" />
+	<parameter name="Client email reg" value="milan.kitanovic+client51@etondigital.com" />
+	<parameter name="Client email reg2" value="" />
+	
+	
+	<parameter name="Candidate first name" value="Milan" />
+	<parameter name="Candidate last name" value="Candidate1" />
+	<parameter name="Candidate email" value="milan.kitanovic+candidate1@etondigital.com" />
+	<parameter name="Candidate last name reg" value="Candidate47" />
+	<parameter name="Candidate email reg" value="milan.kitanovic+candidate47@etondigital.com" />
+	<parameter name="Candidate email reg2" value="" />
+	
+	
+	<parameter name="Password" value="Milanmilan1?" />
+	<parameter name="Phone" value="631046922" />
+	
+	<parameter name="Company name reg" value="Eton Digital Nis 42" />
+	<parameter name="Company name reg2" value="Eton Digital 02" />
+	<parameter name="Company name" value="Eton Digital" />
+	<parameter name="Company website" value="etondigital.com" />
+	
+	<parameter name="LinkedIn" value="https://rs.linkedin.com/in/milan-kitanovic-244b381b2" />
+	<parameter name="Job title client" value="Senior regruter" />
+	<parameter name="Job title candidate" value="QA Specialist" />
+	<parameter name="Image" value="C:\\Users\\Milica\\Downloads\\Poso\\Mountain.jpg" />
+	<parameter name="Image2" value="C:\\Users\\Milica\\Downloads\\Poso\\Candidate.jpg" />
+	<parameter name="About me client" value="This is something about Client" />
+	<parameter name="About me clientL2" value="More about the Client" />
+	<parameter name="About me candidate" value="This is something about Candidate" />
+	<parameter name="About me candidateL2" value="More about the Candidate" />
+	<parameter name="CV" value="C:\\Users\\Milica\\Downloads\\Poso\\CV.pdf" />
+	<parameter name="Salary" value="50000" />
+	<parameter name="Message to candidate" value="Hello, your profile is looking great." />
+	<parameter name="Message to candidateL2" value="Would you consider joining our team" />
+	<parameter name="Message2 to candidate" value="We have a nice working conditions." />
+	<parameter name="Message2 to candidateL2" value="And we have a great salaries" />
+	<parameter name="Message to client" value="Hello, your offer looks interesting." />
+	<parameter name="Message to clientL2" value="Please send me more details" />
+	
+	
+	<test thread-count="5" name="Parallel1">
+		<classes>
+			<class name="tests.LogInAsCandidate" />
+		</classes>
+		</test> <!-- Test -->
+		<test thread-count="5" name="Parallel2">
+		<classes>
+			
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
