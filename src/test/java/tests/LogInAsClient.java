@@ -79,6 +79,8 @@ public class LogInAsClient {
 
 		//CAN BE CHANGED, MAYBE IMPROVED
 		Assert.assertEquals(clientFirstAndLastName, "Milan Client1");
+
+		System.out.println("Ovo je izmenjeno direktno na gitu");
 	}
 	
 	@AfterMethod	
