@@ -13,7 +13,7 @@ import resources.Base;
 public class TestGit extends Base{
 	
 	public WebDriver driver;
-	
+	//da se puluje
   @Test
   public void testTestGit() {
 	  
