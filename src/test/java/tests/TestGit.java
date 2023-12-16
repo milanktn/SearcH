@@ -13,13 +13,13 @@ import resources.Base;
 public class TestGit extends Base{
 	
 	public WebDriver driver;
-	//da se puluje
+	
   @Test
   public void testTestGit() {
 	  
 	  HomePage homePage = new HomePage(driver);
 	  homePage.logInButton().click();
-	  
+	  System.out.print("Da se puluje");	  
   }
   
   @BeforeMethod
