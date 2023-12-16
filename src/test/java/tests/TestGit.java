@@ -19,8 +19,8 @@ public class TestGit extends Base{
 	  
 	  HomePage homePage = new HomePage(driver);
 	  homePage.logInButton().click();
-	  System.out.print("Da se puluje");	  
-  }
+	  System.out.print("Da se puluje");	
+	  System.out.print("Testiraju se grane");  }
   
   @BeforeMethod
 	public void openBrowser() throws IOException {
